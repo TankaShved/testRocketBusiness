@@ -180,74 +180,64 @@ button {
     width: 100%;
     border-bottom: 1px solid #777;
     height: 44px;
-    /*display: inline-block;
-    counter-reset: flag;
-    color: black;
-    box-shadow: 0 0 2px #aaa;*/
 }
 
 .breadcrumbs a {
-    position: relative;
     float: left;
     padding-left: 60px;
-    padding-right: 10px;
     text-decoration: none;
     line-height: 36px;
-    color: black;
-    background: white;
-    transition: all 0.5s;
 }
 
-
-/*.breadcrumbs a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -18px;
-    z-index: 1;
-    width: 36px;
-    height: 36px;
-    background: white;
-    box-shadow: 1px 1px 0 1px #ddd;
-    border-radius: 50px 0 0 0;
-    transform: rotate(-45deg) scale(0.73);
-    transition: all 0.5s;
+.breadcrumbs .active {
+    padding-left: 6px;
 }
 
-.breadcrumbs a:hover,
-.breadcrumbs a:hover::after,
-.breadcrumbs a.active,
-.breadcrumbs a.active::after {
-    background: #f1c40f;
+.breadcrumbs .active::before {
+    content: '\2192';
+    font-size: 18px;
+    padding: 0 8px 0 2px;
 }
-
-.breadcrumbs a::before {
-    content: counter(flag);
-    counter-increment: flag;
-    position: absolute;
-    top: 8px;
-    left: 30px;
-    line-height: 20px;
-    box-shadow: 0 0 2px #ccc;
-    width: 20px;
-    background-color: white;
-    border-radius: 50%;
-}
-
-.breadcrumbs a:first-child {
-    padding-left: 46px;
-}
-
-.breadcrumbs a:first-child::before {
-    left: 14px;
-}
-
-*/
 
 .conteiner {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+.conteiner h2 {
+    width: 100%;
+    padding: 46px 0 0 65px;
+}
+
+.pagination {
+    width: 100%;
+    padding: 27px 0 0 76px;
+}
+
+.pagination li {
+    float: left;
+    margin-right: 13px;
+    display: block;
+}
+
+.pagination li a {
+    border: solid 1px #dfdfdf;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: PT_Sans;
+    padding: 12px 15px;
+    color: #616167;
+}
+
+.pagination .active a {
+    background: #db055b;
+    color: #fff;
+}
+
+.threeDots {
+    padding: 3px 8px;
 }
 
 .item {
@@ -269,6 +259,7 @@ footer {
     align-items: center;
     height: 170px;
     background-color: #dfe1e9;
+    margin-top: 87px;
 }
 
 footer div {
@@ -305,7 +296,7 @@ div a {
     float: right;
     background-image: url(img/Layer_45.png);
     background-repeat: no-repeat;
-    background-position: right;
-    padding-top: 90px;
+    background-position-x: right;
+    padding-top: 67px;
     text-align: right;
 }
